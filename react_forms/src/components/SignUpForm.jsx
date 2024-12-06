@@ -52,6 +52,7 @@ export default function SignUpForm({ token, setToken }) {
         <label>
           password:{" "}
           <input
+            minLength={8}
             value={password}
             onChange={(event) => {
               setPassword(event.target.value);
